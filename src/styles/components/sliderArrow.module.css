@@ -1,0 +1,36 @@
+.prevArrow, .nextArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-350%);
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.prevArrow {
+    left: 100px;
+}
+  
+.nextArrow {
+    right: 100px;
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+    .prevArrow, .nextArrow {
+        top: 35%;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 480px) {
+    .prevArrow, .nextArrow {
+        top: 25%;
+    }
+    .prevArrow {
+        left: 25px;
+    }
+      
+    .nextArrow {
+        right: 25px;
+    }
+}

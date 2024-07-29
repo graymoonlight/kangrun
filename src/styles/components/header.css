@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    height: 70px;
+}
+
+.header__upper__image{
+    margin-left: 10%;
+}
+
+.header__upper__call-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+.header__upper__text-container{
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header__upper__text-container_number{
+    margin-top: 3px;
+}
+
+
+.header__lower{
+    background-color: rgb(24, 97, 174);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__lower a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.header__lower a.active {
+    background-color: rgb(4, 67, 134);
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+    .header__upper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header__upper__image {
+        margin-left: 0;
+    }
+
+    .header__upper__call-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .header__lower {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__lower a {
+        padding: 10px 0;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 480px) {
+    .header__upper {
+        padding: 5px;
+    }
+
+    .header__upper__image {
+        width: 60px;
+        height: auto;
+    }
+
+    .header__upper__call-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .header__upper__text-container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header__lower {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__lower a {
+        padding: 5px 0;
+    }
+}

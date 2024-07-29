@@ -1,0 +1,128 @@
+.slider {
+    width: 99.4vw;
+    height: 70vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-content {
+    z-index: 10;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #fff;
+    transform: translate(65%, 100%);
+}
+
+.slide-content-container {
+    margin: 25px;
+}
+
+.slide-image {
+    margin-bottom: 15px;
+}
+
+.slide-text {
+    border-top: 2px solid #fff; 
+}
+
+.slide-text p {
+    margin-top: 15px;
+    color: white;
+    font-family: "Times New Roman";
+    font-size: 30px;  
+}
+
+.slick-slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+  
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+}
+  
+.slick-prev {
+    left: 10px;
+}
+  
+.slick-next {
+    right: 10px;
+}
+  
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    .slide-content-container {
+        margin-left: -90px;
+    }
+    .slide-content {
+        border: none;
+    }
+}
+
+
+/* Планшеты */
+@media (max-width: 768px) {
+    .slide-content-container {
+        margin-left: -60px;
+    }
+    .slide-content {
+        border: none;
+    }
+    .slider {
+        height: 50vh;
+    }
+    .slide-text p {
+        font-size: 14px;
+    }
+    .slide-image{
+        width: 400px;
+        height: 70px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 480px) {
+
+    .slide-image{
+        width: 300px;
+        height: 55px;
+    }
+
+    .slide-content-container {
+        margin-left: -85px;
+        margin-top: -35px;
+    }
+    .slide-content {
+        border: none;
+    }
+    .slider {
+        height: 40vh;
+    }
+    .slide-text p {
+        font-size: 15px;
+    }
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+    }
+}

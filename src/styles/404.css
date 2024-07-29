@@ -1,0 +1,38 @@
+
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(4, 67, 134);
+    text-align: center;
+}
+  
+.error-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+  
+.error-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.error-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+.home-link {
+    color: #0070f3;
+    text-decoration: none;
+}
+  
+.home-link:hover {
+    text-decoration: underline;
+}
