@@ -113,6 +113,10 @@
 
 /* Планшеты */
 @media (max-width: 768px) {
+
+  .footer__info-container__name:before{
+    left: 597px;
+  }
     .footer {
       flex-direction: column;
       align-items: flex-start;
@@ -146,6 +150,11 @@
   
 /* Телефоны */
 @media (max-width: 480px) {
+
+  .footer__info-container__name:before{
+    left: 447px;
+  }
+
     .footer {
       padding: 10px;
     }
@@ -164,4 +173,11 @@
     .footer__info-container__number__text p {
       margin-right: 5px;
     }
+}
+
+@media (max-width: 430px) {
+
+  .footer__info-container__name:before{
+    display: none;
+  }
 }

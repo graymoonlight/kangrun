@@ -1,0 +1,83 @@
+.about-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.about-image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.tab-button {
+    padding: 10px 20px;
+    font-family: "Times New Roman";
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+  
+.tab-button.active {
+    color: rgb(24, 97, 174);
+    font-weight: bold;
+}
+  
+.tab-content p{
+    text-align: center;
+    padding: 20px;
+    font-family: "Times New Roman";
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.tab-image{
+    margin-bottom: 40px;
+}
+
+.capability_container{
+    display: flex;
+    flex-direction: row;
+    font-family: "Times New Roman";
+}
+
+
+.capability-image{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}

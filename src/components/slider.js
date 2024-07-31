@@ -49,6 +49,19 @@ export default function CSlider() {
           </div>
           <Image src="/slider1.png" alt="Slide 2" width={1000} height={1000} />
         </div>
+        <div className="slide">
+          <div className='slide-content'>
+            <div className='slide-content-container'>
+              <div className='slide-image'>
+                <Image src="/icons.png" width={500} height={500}/>
+              </div>
+              <div className='slide-text'>
+                <p>Честность, оригинальное качество, оперативность,<br /> взаимовыгодное дружеское сотрудничество!</p>
+              </div>
+            </div>
+          </div>
+          <Image src="/slider2.png" alt="Slide 2" width={1000} height={1000} />
+        </div>
       </Slider>
     </div>
   );

@@ -1,0 +1,273 @@
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/background.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid rgb(216, 216, 216);
+}
+
+.sub-search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 300px;
+  margin-right: 20%;
+}
+
+.search-input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.category-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.maincategory-container {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(51, 51, 51);
+  justify-content: space-between;
+  box-shadow: 0px 24px 51px 0px rgba(49, 51, 51, 0.15);
+  border-radius: 25px;
+  background-color: white;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.engine-title, .vodorod-title, .akp-title {
+  cursor: pointer;
+}
+
+.engine-title {
+  margin-left: 20%;
+  margin-right: 10px;
+}
+
+.vodorod-title {
+  margin-right: 20%;
+  margin-left: 10px;
+}
+
+.subcategory-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(24, 97, 174);
+  border-radius: 1px;
+  width: 20%;
+  justify-content: center;
+  height: 30px;
+}
+
+.isde-title {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+
+.isle-title, .isde-title {
+  margin-top: 10px;
+  color: white;
+}
+
+.products-card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+  width: 25%;
+}
+
+.image-card-container {
+  width: 100%;
+}
+
+.table-card-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.table-card-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.table-card-container th,
+.table-card-container td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-card-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table-card-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.vodorod-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.vodorod-image {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.page-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.page-container p {
+  gap: 5px;
+  font-family: "PingFang";
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: block;
+}
+
+.active-category {
+  color: rgb(0, 102, 153);
+}
+
+.page-container p.active-page {
+  font-weight: bold;
+  color: rgb(24, 97, 174);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .card-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .maincategory-container {
+    width: 80%;
+  }
+
+  .subcategory-container {
+    width: 40%;
+  }
+
+  .card-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .maincategory-container {
+    width: 90%;
+  }
+
+  .subcategory-container {
+    width: 50%;
+  }
+
+  .card-container {
+    width: 60%;
+  }
+
+  .sub-search-container {
+    width: 80%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .maincategory-container {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .subcategory-container {
+    width: 70%;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+
+  .engine-title,
+  .vodorod-title,
+  .akp-title {
+    margin: 10px 0;
+  }
+
+  .sub-search-container {
+    width: 90%;
+    margin-right: 5%;
+  }
+}

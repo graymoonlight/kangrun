@@ -126,3 +126,22 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 430px) {
+
+    .slide-content-container {
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+    .slick-prev, .slick-next {
+        width: 10px;
+        height: 10px;
+    }
+    .slide-image{
+        width: 200px;
+        height: 35px;
+    }
+    .slide-text p {
+        font-size: 10px;
+    }
+}
