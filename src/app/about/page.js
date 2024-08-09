@@ -60,9 +60,9 @@ export default function About() {
     },
     history: {
       text: 'История началась в 1986 году с сотрудничества с хасанским районом Приморского края СССР.',
-      images: ['/history1.png', '/history2.png', '/history3.png'],
+      images: ['/history/history1.png', '/history/history2.png', '/history/history3.png'],
       text2: 'С друзьями из ТПП Приморского края.',
-      images2: ['/history4.png'],
+      images2: ['/history/history4.png'],
     },
     capability: {
       text: (

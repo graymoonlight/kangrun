@@ -264,7 +264,7 @@ export default function Products() {
     if (category === 'АКП') {
       setCurrentPage(1);
     } else if (category === 'Водород') {
-      setCurrentPage(1); // Для водорода мы не используем пагинацию
+      setCurrentPage(1);
     } else {
       setProducts(productsData.filter(product => product.category === category));
       setCurrentPage(1);

@@ -60,8 +60,8 @@ export default function Home() {
             <div className={styles['cilinder-title']}>
               <Image
               src="/engine.png"
-              width={1000}
-              height={1000}
+              width={100}
+              height={100}
               className={styles['cilinder-image']}
               />
               <h1>Головка блока цилиндров <br/>и блок цилиндров</h1>
