@@ -5,7 +5,7 @@ const NewsBlock = ({ imageSrc, author, description }) => {
       <div className={styles['news-block']}>
         <img src={imageSrc} alt="News Image" className={styles['news-image']} />
         <p className={styles['news-author']}>Фото предоставлено: {author}</p>
-        <p className={styles['news-description']}>{description}</p>
+        <div className={styles['news-description']}>{description}</div>
       </div>
     );
 };

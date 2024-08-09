@@ -5,7 +5,7 @@ export const newsData = [
     date: '12:30, 07.09.2023',
     blocks: [
       {
-        imageSrc: '/news/newsImages/newsIdimages/news3.png',
+        imageSrc: '/news/newsImages/newsIdImages/news3.png',
         author: 'realnoevremya.ru пресс-службой раиса Татарстана',
         description: (
           <>
@@ -22,7 +22,7 @@ export const newsData = [
         )
       },
       {
-        imageSrc: '/news/newsImages/newsIdimages/news2.png',
+        imageSrc: '/news/newsImages/newsIdImages/news2.png',
         author: 'realnoevremya.ru пресс-службой раиса Татарстана',
         description: (
           <>
@@ -36,7 +36,7 @@ export const newsData = [
         )
       },
       {
-        imageSrc: '/news/newsImages/newsIdimages/news1.png',
+        imageSrc: '/news/newsImages/newsIdImages/news1.png',
         author: 'realnoevremya.ru пресс-службой раиса Татарстана',
         description: (
           <>
